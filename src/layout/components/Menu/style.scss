@@ -1,0 +1,43 @@
+@import "../../../assets/scss/app.scss";
+
+.menu-wrapper {
+    background-color: $dark-gray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    &__container {
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        .menu-title {
+            font-size: $font-lg;
+            font-weight: 600;
+            color: $white;
+            letter-spacing: 2px;
+        }
+        .separator {
+            margin: 0 1rem;
+        }
+        .menu-list {
+            position: relative;
+            display: flex;
+            overflow-x: auto;
+            &__item {
+                font-size: $font-sm;
+                color: $white;
+                padding: 0 1rem;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                cursor: pointer;
+                &:hover {
+                    background-color: $gray;
+                }
+            }
+        }
+    }
+}

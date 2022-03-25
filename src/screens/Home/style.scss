@@ -1,0 +1,28 @@
+@import '../../assets/scss/app.scss';
+.home-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    &__container{
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include to($breakpoint-sm){
+            justify-content: center;
+        }
+    }
+    .loading{
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        &__spinning{
+            font-size: $font-lg;
+            color: $gray;
+        }
+    }
+}

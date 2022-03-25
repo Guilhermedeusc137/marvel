@@ -1,0 +1,43 @@
+@import "../../../assets/scss/app.scss";
+
+.advertisement-wrapper {
+    background: $medium-gray;
+    background-size: 7px 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    @include to($breakpoint-sm) {
+        padding: 10px;
+    }
+    .advertisement {
+        width: 100%;
+        max-width: calc(1140px - 2rem);
+        background: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 0px);
+        background-size: 5px 5px;
+        padding: 2rem 3rem;
+        @include to($breakpoint-sm) {
+            padding: 1rem;
+        }
+        &__container {
+            position: relative;
+            height: 100px;
+        }
+        &__title {
+            position: absolute;
+            right: 0;
+            top: -20px;
+            font-size: $font-xs;
+            color: $muted;
+            background-color: $medium-gray;
+            padding: 0 10px;
+            line-height: 20px;
+        }
+        &__content {
+            background: $muted;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import "../../../assets/scss/app.scss";
+
+.header-wrapper {
+    .header {
+        display: flex;
+        justify-content: center;
+        &__container {
+            width: 100%;
+            max-width: 1140px;
+            padding: 0 1rem;
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            @include to($breakpoint-md) {
+                flex-direction: column;
+            }
+            .header-brand {
+                display: flex;
+                align-items: flex-end;
+                &__logo {
+                    width: 200px;
+                    @include to($breakpoint-md) {
+                        width: 150px;
+                    }
+                }
+                &__social-icons {
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    .social-icon {
+                        transition: 0.1s;
+                        height: 25px;
+                        width: 25px;
+                        margin: 0 10px;
+                        cursor: pointer;
+                        path {
+                            fill: $gray;
+                        }
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    .facebook {
+                        &:hover {
+                            path {
+                                fill: #3b5998;
+                            }
+                        }
+                    }
+                    .youtube {
+                        &:hover {
+                            path {
+                                fill: #c4302b;
+                            }
+                        }
+                    }
+                    .twitter {
+                        &:hover {
+                            path {
+                                fill: #00acee;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-action {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-bottom: 0.5rem;
+                @include to($breakpoint-md) {
+                    align-items: center;
+                }
+                .header-link {
+                    display: flex;
+                    justify-content: flex-end;
+                    @include to($breakpoint-md) {
+                        padding: 1rem 0;
+                    }
+                    &__button {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        font-size: $font-sm;
+                        color: $medium-gray;
+                        letter-spacing: 1px;
+                        transition: 0.1s;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                .header-search {
+                    display: flex;
+                    align-items: center;
+                    .separator {
+                        margin: 0 1rem;
+                    }
+                    .cart-icon {
+                        transition: 0.1s;
+                        height: 30px;
+                        width: 30px;
+                        cursor: pointer;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                        path {
+                            fill: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

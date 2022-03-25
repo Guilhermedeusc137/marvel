@@ -1,0 +1,123 @@
+@import "../../../assets/scss/app.scss";
+
+.footer-wrapper {
+    background-color: $dark-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__container {
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 1rem;
+        .menu-block {
+            min-width: 100%;
+            padding: 3rem 0;
+            &__title {
+                font-weight: bold;
+                letter-spacing: 2px;
+                padding: 0 1rem;
+            }
+            ul {
+                list-style: none;
+                margin-right: 0;
+                padding: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                @include to($breakpoint-md) {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                li {
+                    font-size: $font-rg;
+                    color: $white;
+                    margin-top: 1rem;
+                    @include to($breakpoint-md) {
+                        text-align: center;
+                        margin-top: 3rem;
+                    }
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 1rem;
+                        li {
+                            color: $white;
+                            width: 100%;
+                            margin-top: 20px;
+                            font-size: $font-sm;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-top: 1px solid $medium-gray;
+            @include to($breakpoint-xl) {
+                flex-direction: column;
+            }
+            &__logo {
+                width: 60px;
+            }
+            ul {
+                display: flex;
+                @include to($breakpoint-xl) {
+                    padding: 1rem 0;
+                    flex-direction: column;
+                }
+                li {
+                    padding: 0 10px;
+                    font-size: $font-xs;
+                    color: $medium-gray;
+                    @include to($breakpoint-xl) {
+                        text-align: center;
+                        padding: 0.5rem 0;
+                    }
+                }
+            }
+            &__social-icons {
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                display: flex;
+                .social-icon {
+                    transition: 0.1s;
+                    height: 25px;
+                    width: 25px;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    path {
+                        fill: $gray;
+                    }
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                .facebook {
+                    &:hover {
+                        path {
+                            fill: #3b5998;
+                        }
+                    }
+                }
+                .youtube {
+                    &:hover {
+                        path {
+                            fill: #c4302b;
+                        }
+                    }
+                }
+                .twitter {
+                    &:hover {
+                        path {
+                            fill: #00acee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

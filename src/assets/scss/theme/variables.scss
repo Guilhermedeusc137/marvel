@@ -1,0 +1,34 @@
+// breakpoints a'la bootstrap
+// Screen Sizes
+$screen-xlarge: 1910px;
+$screen-large: 1366px;
+$screen-medium: 801px;
+$screen-small: 551px;
+$screen-xsmall: 100px;
+
+$screen-md: 768px !default;
+
+//THEME COLORS
+$primary: #1f1f1f;
+$secondary: #ed1d27;
+$dark-gray: #353535;
+$gray: #515151;
+$medium-gray: #6f6f6f;
+$muted: #959595;
+$light-gray: #ebebeb;
+$white: #ffffff;
+
+//FONT-FAMILY
+$roboto-regular: "Roboto-Regular";
+$roboto-bold: "Roboto-Bold";
+$roboto-black: "Roboto-Black";
+$roboto-condensed-regular: "Roboto-Condensed-Regular";
+$roboto-condensed-bold: "Roboto-Condensed-Bold";
+
+//TIPOGRAPHY
+$font-xs: 14px;
+$font-sm: 16px;
+$font-rg: 18px;
+$font-md: 20px;
+$font-lg: 24px;
+$font-xl: 40px;
